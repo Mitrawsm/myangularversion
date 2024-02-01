@@ -1,0 +1,21 @@
+
+<div id="card-component">
+  <div class="card-box">
+    <div class="card-holder">
+      <div class="card-box1">
+        <div class="card-box-img">
+          <img
+            src="https://robohash.org/{{ user.username }}?size=200x200&set=set3"
+            alt=""
+          />
+        </div>
+        <div class="card-box-word">
+          <h4>{{ user.name }}</h4>
+          <p>{{ user.email.toLocaleLowerCase() }}</p>
+        </div>
+      </div>
+      <button class="btn" routerLink="/users/:id">View Details</button>
+    </div>
+  </div>
+</div>
+
